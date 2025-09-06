@@ -47,7 +47,7 @@ const IntroPage = () => {
     if (showcontent && typedText.length < fullText.length) {
       const timeout = setTimeout(() => {
         setTypedText(fullText.slice(0, typedText.length + 1));
-      }, 50); // speed (ms)
+      }, 50); 
       return () => clearTimeout(timeout);
     } else if (typedText.length === fullText.length) {
       setShowButton(true);
